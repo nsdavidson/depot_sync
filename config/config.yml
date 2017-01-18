@@ -1,0 +1,31 @@
+---
+source: "http://willem.habitat.sh"
+destination: "http://depot.nsdavidson.com"
+token: "<OAUTH TOKEN HERE>"
+origins:
+  - core:
+    name: core
+    packages:
+      - httpd:
+        name: httpd
+        versions: All 
+      - nginx:
+        name: nginx
+        versions: Latest
+      - bash-static:
+        name: bash-static 
+        versions: Latest
+  - nsdavidson:
+    name: nsdavidson
+    packages:
+      - rust-hello-world:
+        name: rust-hello-world 
+        versions: All
+  - nolan:
+    name: nolan
+    packages:
+      - rust-hab-sample:
+        name: rust-hab-sample
+        versions: All
+  - bdangit:
+    name: bdangit
